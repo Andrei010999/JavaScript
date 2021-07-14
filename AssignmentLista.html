@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lista derulanta cu functii</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+		#List{
+			width: 300px;
+			height: 100px;
+			background-color: grey;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#Div1Id{
+			width: 300px;
+			height: 100px;
+			background-color: coral;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+	</style>
+</head>
+
+<body>
+	<form id="List">
+		<select id= "listElectronic" onchange="listChange()" >
+			<option value="Samsung">Samsung</option>
+			<option value="Apple">Apple</option>
+			<option value="Huawei">Huawei</option>
+			<option value="Acer">Acer</option>
+			<option value="HP">HP</option>
+			<option value="Dell">Dell</option>
+			<option value="Microsoft">Microsoft</option>
+			<option value="LG">LG</option>
+		</select>
+	</form>
+
+	<p id="Div1Id" >"Select an item"
+	</p>
+
+	<script type="text/javascript">
+		var items = document.querySelectorAll("form option");
+
+		for(var i = 0; i<items.length; i++){
+			items[i].style.color = "blue";
+		}
+
+		function listChange(){
+			var selectedItem = document.getElementById("listElectronic").value;
+			document.getElementById("Div1Id").innerText = "Selected item: " + selectedItem;
+		}
+		
+	</script>
+
+</body>
+</html>
