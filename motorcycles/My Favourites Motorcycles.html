@@ -1,0 +1,273 @@
+<!DOCTYPE>
+<html>
+
+<head>
+<title>My favourites mototcycles</title>
+<meta charset="utf-8">
+
+<style type ="text/css">
+
+body{
+  font-family: "Arial";
+  font-size: 20px;
+  font-weight: bold;
+  text-align: justify;
+
+}
+
+a:link {
+	color: green;
+}
+
+a:visited{
+	color: red;
+}
+
+a:hover{
+	color: blue;
+}
+
+div[class*="wrap"]{
+	color: red
+}
+
+div[class|="honda"]{
+	color: green
+}
+div[class*="BMW"]{
+	color: blue
+}
+div[class*="triumph"]{
+	color: orange
+}
+input[type="text"]:hover {
+	border: solid 3px blue;
+}
+input[type="text"]:focus {
+	border: solid 3px red;
+}
+ div~ast-of-type {
+  width: 500px;
+  height: 400px;
+  background-color: red;
+}
+p{
+  border-style: solid;
+  border-width: 3px 2px 3px 2px;
+  border-color: black red black red;
+  border-radius: 10px 0px 10px 0px;
+  padding: 20px 10px 20px 10px;
+  margin: 40px;
+}
+
+div {
+  margin: auto;
+  border-style: solid;
+  border-width: 3px;
+
+  padding: 20px;
+}
+#wrapper {
+   background-color: gray;
+  margin-bottom: 20px;
+
+}
+#wrapper2 {
+  display: flex;
+border: 1px solid black;
+}
+
+}
+#BMW {
+  background-color: blue;
+  margin-bottom: 20px;
+
+}
+
+#tabel{
+  background-color: coral;
+  margin-bottom: 20px;
+
+}
+</style>
+
+</head>
+
+<body>
+	<h1>These are the motorcycles which i like the most</h1>
+<div class="wrapper">
+	<ul>
+  <li>Honda
+    <ul>
+      <li>2021 CB650R</li>
+      <img src="cb6501.jpg" alt="650picture" style="width: 600px; height:400px;">
+      <p>Press play to listen the engine</p>
+      <audio controls>
+		<source src="2019-20 Honda CB650R exhaust sound -stock vs. Yoshimura R-77 Full system.mp3" type="audio/mpeg">
+		</audio>
+      <a href="#Go to paragraph 1">650R Info</a>
+      <hr>
+      <li>2021 CB1000R</li>
+      <img src="cb1000Rr.png" alt="CB1000R photo" style="width: 600px; height:400px;">
+      <p>Press play to listen the engine</p>
+      <audio controls>
+		<source src="2018 Honda CB1000R- Sound Stock Vs. Yoshimura Alpha T Slip-on.mp3" type="audio/mpeg">
+		</audio>
+      <a href="#Go to paragraph 2">1000R info</a>
+      <hr>
+    </ul>
+  </li>
+  <li>BMW 2021 S1000R</li>
+  <img src="2021-bmw-s-1000-r-hero-left-profile.jpg" alt="S1000R photo" style="width: 650px; height:370px;">
+  <p>Press play to listen the engine</p>
+  <audio controls>
+		<source src="2020 BMW S1000RR Exhaust Sound Stock vs. Yoshimura Alpha T slip-on.mp3" type="audio/mpeg"></audio>
+  <a href="#Go to paragraph 3">S1000R info</a>
+  <hr>
+  <li>Triumph 2017 Bonneville Bobber</li>
+  <img src="riding.jpg" alt="triumph photo" style="width: 650px; height:350px;">
+  <p>Press play to listen the engine</p>
+  <audio controls>
+		<source src="Triumph Bobber black walk around + sound.mp3" type="audio/mpeg"></audio>
+  <a href="#Go to paragraph 4">Bonneville Bobber info</a>
+  <hr>
+ </ul>
+ </div>
+ 
+
+
+
+<dl>
+    <dt>Honda 2021 CB650R</dt>
+      	<p id="Go to paragraph 1">
+        <a href="file:///C:/motorcycles/The%202021%20Honda%20CB650R.html" target="_blank">Details of This Motorcycle</a>
+    		<div class="wrapper2">
+    <p>The major news of the CB650R’s update is application of 41mm Showa Separate Function Big Piston USD forks* – high quality suspension that further heighten the bike’s handling ability.
+
+    EURO5 compliance for the engine has been achieved with no loss of top end power; other improvements include slightly more forward-set handlebars, improved visibility for the LCD display and USB Type-C charging socket under the seat. New side panels and rear mudguard are minor cosmetic changes.</p>
+    </div>
+    
+
+    <form action ="script.php" method="POST">
+    	<input type="checkbox" name="question" value="like" id="question">
+    	<label for="question">I like CB650R</label>
+    	<input type="submit" value="Submit">
+    	</form>
+    	
+
+    	<input type="text" name="demo">
+    	<hr>
+    
+
+
+    <dt>Honda 2021 CB1000R</dt>
+    
+    <p id="Go to paragraph 2">
+       <a href="file:///C:/motorcycles/The%202021%20Honda%20CB1000R.html" target="_blank">Details of This Motorcycle</a>
+    	<div class="honda-1000">
+    <p>
+    It was only three years ago that Honda introduced its ‘Neo Sports Cafe’ styling theme on the CB1000R – mixing classic cues with a modern stance and details – but already the firm is evolving the CB1000R into a new generation for 2021.
+
+    Although the new model shares its chassis and Fireblade-derived 998cc four-cylinder engine with the previous version, the styling has been subtly tweaked to reflect a selection of technical changes that bring the bike into line with modern emission rules and technological expectations.</p>
+    </div>
+    
+
+    <form action ="script.php" method="POST">
+    	<input type="checkbox" name="question" value="like" id="question">
+    	<label for="question">I like CB1000R</label>
+    	<input type="submit" value="Submit">
+    	</form>
+    	<input type="text" name="demo">
+    	<hr>
+
+
+
+    <dt>BMW</dt>
+    <dd>2021 S1000R</dd>
+    <p id="Go to paragraph 3">
+    <a href="file:///C:/motorcycles/The%202021%20BMW%20S1000R.html" target="_blank">Details of This Motorcycle</a>
+    <div class="BMW">
+    	<p>
+    As we’ve come to expect, the 2021 comes with a bafflingly wide array of electronics to maximise its potential and the option to expand it even further by adding optional extras.
+
+    The base version gets three riding modes – rain, road and dynamic – and adding the ‘Riding Modes Pro’ option adds a programmable ‘Dynamic Pro’ setting as well as including adjustable engine braking and a tempting-sounding ‘Power Wheelie’ mode that controls how high the front wheel lifts before the six-axis IMU-controlled system cuts the power.
+
+    Similarly, there’s a hill-start control system as standard, with an adjustable ‘Pro’ version as an add-on option, and an up-down quickshifter can also be added as a factory-fit extra.
+
+    A ‘Headlight Pro’ option adds adaptive cornering lights, with extra LEDs that turn on in the direction of travel when you bank more than 7 degrees at speeds over 10km/h.</p>
+    </div>
+    <form action ="script.php" method="POST">
+    	<input type="checkbox" name="question" value="like" id="question">
+    	<label for="question">I like S1000R</label>
+    	<input type="submit" value="Submit">
+    	</form>
+  
+    	<input type="text" name="demo">
+    	<hr>
+
+
+
+
+
+    <dt>Triumph</dt>
+    <dd>2017 Bonneville Bobber</dd>
+    <p id="Go to paragraph 4">
+    <a href="file:///C:/motorcycles/The%202017%20Triumph%20Bonneville%20Bobber.html" target="_blank">Details of This Motorcycle</a>
+    <div class="triumph">
+    	<p>
+    Perfectly integrating all the hallmark features of a bobber with beautiful detailing, premium finishes and that iconic silhouette. Adding to the stylish look are Bobber-unique bar end mirrors, handlebar risers, gloss black bullet indicators, branded locking fuel cap, and classically-styled twin throttle bodies for minimalistic, stripped back styling, muscular stance and purposeful presence.</p>
+    	</div>
+
+    	
+    	<form action ="script.php" method="POST">
+    	<input type="checkbox" name="question" value="like" id="question">
+    	<label for="question">I like Triumph</label>
+
+    	<input type="submit" value="Submit">
+    	</form>
+
+    	<input type="text" name="demo">
+    	<hr>
+
+    	
+
+
+ <div id="tabel">
+<table border="1">
+  <tr>
+    <th>*</th>
+    <th>Honda CB650R</th>
+    <th>Honda CB1000R</th>
+    <th>BMW S1000R</th>
+    <th>Triumph Bonneville Bobber</th>
+   </tr>
+  <tr>
+    <th>Horsepower</th>
+    <td>95.2 Hp</td>
+    <td>143.5 Hp</td>
+    <td>165 Hp</td>
+    <td>77 Hp</td>
+  </tr>
+  <tr>
+    <th>Weight</th>
+    <td>202 kg</td>
+    <td>212 Kg</td>
+    <td>199 kg</td>
+    <td>237.5 kg</td>
+</tr>
+  <tr>
+    <th>Top Speed</th>
+    <td>230 km/h</td>
+    <td>241 km/h</td>
+    <td>255 km/h</td>
+    <td>149 km/h</td>
+</tr>
+  <tr>
+    <th>Price</th>
+    <td>8.350€</td>
+    <td>13.450€</td>
+    <td>From 14.500€</td>
+    <td>From $13,150</td>
+    </tr>
+</table>
+</div>
